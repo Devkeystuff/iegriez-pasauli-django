@@ -65,6 +65,17 @@ TEMPLATES = [
     },
 ]
 
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'iegriez-pasauli',
+        'USER': 'sa',
+        'PASSWORD': 'rR5C9yFr',
+        'HOST': 'localhost',
+        'PORT': '',
+    }
+}
+
 WSGI_APPLICATION = 'core.wsgi.application'
 
 
