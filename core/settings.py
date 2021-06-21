@@ -1,7 +1,9 @@
 
 from pathlib import Path
 import os
+import django_heroku
 import dj_database_url
+
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -148,3 +150,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 WHITENOISE_USE_FINDERS = True
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+
+# Configure Django App for Heroku.
+django_heroku.settings(locals())
