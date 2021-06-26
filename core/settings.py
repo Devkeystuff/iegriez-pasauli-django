@@ -8,12 +8,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '$rdsf_$0l=zfyfh&-axh)#s1b2d(2rwq&s)m78*hs)3%5x$wrf'
+SECRET_KEY = 'django-insecure-l((9&cnoxf@1g9)q+)897xq6+nxw9w(g8%+t-35nl5sepc!5z='
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['https://iegriez-pasauli-backend.herokuapp.com']
+ALLOWED_HOSTS = ['iegriez-pasauli-backend.herokuapp.com']
 
 
 # Application definition
@@ -25,6 +25,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'game'
 ]
 
 MIDDLEWARE = [
