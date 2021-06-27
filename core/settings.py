@@ -15,7 +15,7 @@ SECRET_KEY = 'django-insecure-2%jg#bxcd(vute4m%@hxr3a(k^u-cpaxcb$8_5*c)&59&27+ad
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['frozen-taiga-58737.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['iegriez-pasauli-backend.herokuapp.com', 'localhost']
 
 
 # Application definition
