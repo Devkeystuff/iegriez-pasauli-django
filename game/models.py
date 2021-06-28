@@ -26,7 +26,6 @@ class MapQuestion(models.Model):
     game_item_fk = models.ForeignKey(
         GameItem, blank=False, verbose_name='Game item', on_delete=models.CASCADE)
     statement = models.CharField(max_length=300, blank=False)
-    image = models.ImageField(blank=True)
     answers = models.ManyToManyField('MapAnswer', blank=False)
     answer_message = models.CharField(max_length=300, blank=False)
 
