@@ -27,9 +27,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # 'rest_framework',
-    # 'game',
-    # 'users',
+    'rest_framework',
+    'game',
+    'users',
 ]
 
 MIDDLEWARE = [
@@ -70,8 +70,12 @@ WSGI_APPLICATION = 'core.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'ddoibrdp9psntm',
+        'HOST': 'ec2-52-5-247-46.compute-1.amazonaws.com',
+        'PORT': 5432,
+        'USER': 'topwpzgtfcxizb',
+        'PASSWORD': '1ca4f681998e55625db370befd928ee1e795f0220dea168b06748784775d611d'
     }
 }
 
