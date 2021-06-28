@@ -1,6 +1,6 @@
 from .models import GameItem, MapAnswer, MapQuestion, QuizQuestion
 from rest_framework import viewsets
-from .serializers import GameItemSerializer, MapAnswerValidationSerializer, MapQuestionSerializer, QuizQuestionSerializer, QuizAnswerValidationSerializer
+from .serializers import GameItemSerializer, MapAnswerValidationSerializer, MapQuestionAnswerValidationSerializer, MapQuestionSerializer, QuizQuestionSerializer, QuizAnswerValidationSerializer
 
 # Game item viewset
 
@@ -41,8 +41,8 @@ class MapQuestionViewSet(viewsets.ModelViewSet):
 
 
 class MapAnswerValidationViewSet(viewsets.ModelViewSet):
-    model = MapAnswer
-    serializer_class = MapAnswerValidationSerializer
+    model = MapQuestion
+    serializer_class = MapQuestionAnswerValidationSerializer
 
     def get_queryset(self):
-        return MapAnswer.objects.filter(id=self.request.query_params.get('id'))
+        return MapQuestion.objects.filter(id=self.request.query_params.get('id'))

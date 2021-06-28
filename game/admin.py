@@ -22,9 +22,9 @@ class QuizQuestionAdmin(admin.ModelAdmin):
 
 @admin.register(MapQuestion)
 class MapQuestionAdmin(admin.ModelAdmin):
-    # inlines = [MapAnswerAdmin]
     list_display = ('game_item_fk', 'statement')
-    fields = ('game_item_fk', 'statement', 'answers')
+    fields = ('game_item_fk', 'statement',
+              'answers', 'answer_message', 'image')
 
 
 @admin.register(MapAnswer)

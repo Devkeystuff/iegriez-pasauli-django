@@ -33,7 +33,15 @@ class MapAnswerSerializer(serializers.ModelSerializer):
 class MapAnswerValidationSerializer(serializers.ModelSerializer):
     class Meta:
         model = MapAnswer
-        fields = ('id', 'answer', 'is_correct', 'answer_message')
+        fields = ('id', 'answer', 'is_correct')
+
+
+class MapQuestionAnswerValidationSerializer(serializers.ModelSerializer):
+    answers = MapAnswerValidationSerializer(read_only=True, many=True)
+
+    class Meta:
+        model = MapQuestion
+        fields = ('id',  'answers', 'answer_message')
 
 
 class MapQuestionSerializer(serializers.ModelSerializer):
@@ -41,4 +49,4 @@ class MapQuestionSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = MapQuestion
-        fields = ('id', 'statement', 'answers')
+        fields = ('id', 'statement', 'answers', 'image')
