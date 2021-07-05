@@ -49,4 +49,4 @@ class MapQuestionSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = MapQuestion
-        fields = ('id', 'statement', 'answers', 'image')
+        fields = ('id', 'statement', 'answers')

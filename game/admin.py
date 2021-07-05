@@ -24,7 +24,7 @@ class QuizQuestionAdmin(admin.ModelAdmin):
 class MapQuestionAdmin(admin.ModelAdmin):
     list_display = ('game_item_fk', 'statement')
     fields = ('game_item_fk', 'statement',
-              'answers', 'answer_message', 'image')
+              'answers', 'answer_message')
 
 
 @admin.register(MapAnswer)
