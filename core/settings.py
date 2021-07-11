@@ -16,7 +16,7 @@ SECRET_KEY = 'django-insecure-2%jg#bxcd(vute4m%@hxr3a(k^u-cpaxcb$8_5*c)&59&27+ad
 DEBUG = False
 
 ALLOWED_HOSTS = ['iegriez-pasauli.herokuapp.com',
-                 'https://iegriez-pasauli-backend.herokuapp.com' 'localhost']
+                 'https://iegriez-pasauli-backend.herokuapp.com', 'localhost']
 
 CORS_ALLOWED_ORIGINS = [
     "https://iegriez-pasauli.herokuapp.com", 'https://iegriez-pasauli-backend.herokuapp.com', "http://localhost:3000"]
