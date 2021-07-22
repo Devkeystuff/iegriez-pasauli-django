@@ -15,10 +15,11 @@ SECRET_KEY = 'django-insecure-2%jg#bxcd(vute4m%@hxr3a(k^u-cpaxcb$8_5*c)&59&27+ad
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['iegriez-pasauli.herokuapp.com']
+ALLOWED_HOSTS = [
+    'https://iegriez-pasauli.herokuapp.com', 'iegriez-pasauli.herokuapp.com']
 
 CORS_ALLOWED_ORIGINS = [
-    "https://iegriez-pasauli.herokuapp.com"]
+    'https://iegriez-pasauli.herokuapp.com']
 
 
 # Application definition
