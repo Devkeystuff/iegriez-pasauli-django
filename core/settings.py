@@ -22,7 +22,7 @@ ALLOWED_HOSTS = [
 
 CORS_ALLOWED_ORIGINS = [
     'http://rit.esmaja.lv',
-    'https//rit.esmaja.lv',
+    'https://rit.esmaja.lv',
 ]
 
 
