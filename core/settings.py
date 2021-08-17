@@ -15,11 +15,13 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['iegriez-pasauli.herokuapp.com',
-                 'iegriez-pasauli-backend.herokuapp.com']
+ALLOWED_HOSTS = [
+    'rit.esmaja.lv',
+]
 
 CORS_ALLOWED_ORIGINS = [
-    'https://iegriez-pasauli.herokuapp.com']
+    'https://rit.esmaja.lv'
+]
 
 
 # Application definition
