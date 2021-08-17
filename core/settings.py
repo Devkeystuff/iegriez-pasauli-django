@@ -16,11 +16,13 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    'https://rit.esmaja.lv',
+    '*',
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    '*'
+    'http://rit.esmaja.lv',
+    'https//rit.esmaja.lv',
+
 ]
 
 
