@@ -17,14 +17,12 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     'rit.esmaja.lv',
-    'esmaja.lv',
+    'rit-backend.esmaja.lv',
 ]
 
 CORS_ALLOWED_ORIGINS = [
     'http://rit.esmaja.lv',
     'https//rit.esmaja.lv',
-    'http://esmaja.lv',
-    'https//esmaja.lv',
 ]
 
 
